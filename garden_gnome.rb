@@ -1,43 +1,44 @@
 # Code your instances here
 class GardenGnome
-  attr_accessor :name, :age, :gluten_allergy
+  attr_accessor :hat_color, :name, :age, :gluten_allergy
+  attr_reader :personality
   
   def initialize(hat_color = "red")
     @personality = "evil"
     @hat_color = hat_color
   end 
   
-  def hat_color=(hat_color = "red")
-    @hat_color = hat_color
-  end 
-  def hat_color
-    @hat_color
-  end 
+  # def hat_color=(hat_color = "red")
+  #   @hat_color = hat_color
+  # end 
+  # def hat_color
+  #   @hat_color
+  # end 
   
-  def personality
-    @personality = "evil"
-  end     
+  # def personality
+  #   @personality = "evil"
+  # end     
   
-  def name=(name)
-    @name = name
-  end 
-  def name
-    @name
-  end 
+  # def name=(name)
+  #   @name = name
+  # end 
+  # def name
+  #   @name
+  # end 
   
-  def age=(age)
-    @age = age
-  end 
-  def age
-    @age
-  end 
+  # def age=(age)
+  #   @age = age
+  # end 
+  # def age
+  #   @age
+  # end 
   
-  def gluten_allergy=(gluten_allergy)
-    @gluten_allergy = gluten_allergy
-  end 
-  def gluten_allergy
-    @gluten_allergy
-  end 
+  # def gluten_allergy=(gluten_allergy)
+  #   @gluten_allergy = gluten_allergy
+  # end 
+  # def gluten_allergy
+  #   @gluten_allergy
+  # end 
   
   def gnaw
     return "Gnawing on a tree!!!"
@@ -52,3 +53,6 @@ class GardenGnome
   end 
 end 
 
+gnome1 = GardenGnome.new 
+gnome2 = GardenGnome.new
+gnome2.name = ""
